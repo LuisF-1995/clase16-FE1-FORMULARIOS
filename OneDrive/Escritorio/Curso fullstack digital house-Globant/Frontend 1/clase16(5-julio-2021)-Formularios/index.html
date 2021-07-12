@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Practica Formularios</h1>
+
+    <form action="" method="">
+        <label for="usuario">Nombre usuario</label><br>
+        <input type="text" name="usuario" id="usuario" required><br> <!--Poner un id, debe ser igual al for del label, para asociar--> 
+
+        <label for="clave">Ingrese clave</label><br>
+        <input type="password" name="clave" id="clave" required><br>
+
+        <label for="email">Ingrese direccion e-mail</label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="telefono">Ingrese numero telefonico</label><br>
+        <input type="tel" name="telefono" id="telefono"><br>
+
+        <label for="edad">Ingrese edad</label><br>
+        <input type="number" name="edad" id="edad"><br>
+
+        <!--Desplegable-->
+        <br><label>Elige idioma de preferencia</label>
+        <select name="lang">
+          <option id="lang" value="esp">Español</option>
+          <option id="lang" value="eng">Ingles</option>
+          <option id="lang" value="fra">Frances</option>
+        </select><br>
+
+        <br><label for="textarea">Informacion personal</label><br>
+        <textarea name="comentario" id="textarea" cols="30" rows="10"></textarea> <!--textarea permite gran contenido-->
+
+        <!--Agregando fechas-->
+        <br><label for="fechanacimiento">Ingrese fecha de nacimiento</label>
+        <input type="date" name="fechanacimiento" id="fechanacimiento">
+
+        <!--radiobutton-->
+        <br><p>Seleccione maximo nivel educativo</p>
+        <label><input type="radio" name="educacion" value="pre">Preescolar</label><br> <!--atributo name debe ser el mismo en todos para que esten asociados-->
+        <label><input type="radio" name="educacion" value="sec">Secundaria</label><br>
+        <label><input type="radio" name="educacion" value="tec">Tecnico</label><br>
+        <label><input type="radio" name="educacion" value="tego">Tecnologo</label><br>
+        <label><input type="radio" name="educacion" value="uni">Universitario</label><br>
+        <label><input type="radio" name="educacion" value="pg">Posgrado</label><br>
+
+        <!--checkbox-->
+        <p>¿Que quieres aprender?</p>
+        <label><input type="checkbox" name="aprender" value="FE">Frontend</label><br> <!--atributo value para enviar respuesta al backend-->
+        <label><input type="checkbox" name="aprender" value="BE">Backend</label><br>
+        <label><input type="checkbox" name="aprender" value="FS">Full stack</label><br>
+        <label><input type="checkbox" name="aprender" value="DS">Data science</label><br>
+
+        <!--Cargando archivos-->
+        <br><label for="foto">Cargar foto</label>
+        <input type="file" name="foto" id="foto" accept=".jpg, .png">
+
+        <br><label for="masDocs">Cargar mas documentos y soportes</label>
+        <input type="file" name="masDocs" id="masDocs" multiple>
+
+        <!--Agregando botones-->
+        <br><br><button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

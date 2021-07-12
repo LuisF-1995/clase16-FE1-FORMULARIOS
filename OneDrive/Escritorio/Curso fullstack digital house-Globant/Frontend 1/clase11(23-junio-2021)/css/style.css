@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: #222222;
+    display: flex;
+    width: 1024px;
+    height: 100px;
+}
+
+#logoHeader{
+    width: 234px;
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 720px;
+}
+
+#navHeader{
+    display: flex;
+    padding-top: 40px;
+    padding: 13px;
+}
+
